@@ -7,7 +7,8 @@ from string import Template
 template = "setup_template.iss"
 test_set = "test_set.json"
 results_file = "results.json"
-inno_cmd = r"C:\Program Files(x86)\Inno Setup 5\Compil32.exe"
+#inno_cmd = r"C:\Program Files(x86)\Inno Setup 5\Compil32.exe"
+inno_cmd = r"Inno Setup 5\Compil32.exe"
 
 def save_results(resultsfile, data):
     with open(resultsfile, "w") as r:

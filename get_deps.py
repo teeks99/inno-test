@@ -5,6 +5,14 @@ try:
 except ImportError: # Python 2
     from urllib import urlretrieve
 
+print("Getting Inno")
+inno_url = "https://boost.teeks99.com/deps/InnoSetup-5.6.1.tar.xz"
+inno_file = "InnoSetup-5.6.1.tar.xz"
+urlretrieve(inno_url, inno_file)
+t = tarfile.open(inno_file)
+t.extractall()
+t.close()
+
 print("Getting Source")
 src_url = "https://boost.teeks99.com/lib/1.69.0/boost_1_69_0.tar.bz2"
 src_file = "boost_1_69_0.tar.bz2"
