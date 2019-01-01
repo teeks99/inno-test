@@ -6,7 +6,9 @@ boost_combined/
 
 test_1.0*.exe
 *_setup.iss
+results.json
 
+InnoSetup5.6.1_tk1.tar.xz
 Inno Setup 5/
 InnoSetup5/
 
