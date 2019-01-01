@@ -1,0 +1,30 @@
+{
+  "payloads": [
+    {"name": "boost_source", "dir": "boost_1_69_0"},
+    {"name": "boost_binaries_64", "dir": "boost-bin-msvc14.1-all/lib64-msvc-14.1"},
+    {"name": "boost_binaries_all", "dir": "boost-bin-msvc14.1-all"},
+    {"name": "combined", "dir": "boost_combined"}
+  ],
+  "tests": [
+    {"name": "control", "vars":[]},
+    {"name": "separate_process", "vars":["LZMAUseSeparateProcess=yes"]},
+    {"name": "compression_threads_auto", "vars":["CompressionThreads=auto"]},
+    {"name": "compression_threads_1", "vars":["CompressionThreads=1"]},
+    {"name": "compression_threads_2", "vars":["CompressionThreads=2"]},
+    {"name": "two_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMANumBlockThreads=2"]},
+    {"name": "three_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMANumBlockThreads=3"]},
+    {"name": "four_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMANumBlockThreads=4"]},
+    {"name": "six_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMANumBlockThreads=6"]},
+    {"name": "eight_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMANumBlockThreads=8"]},
+    {"name": "twelve_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMANumBlockThreads=12"]},
+    {"name": "sixteen_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMANumBlockThreads=16"]},
+    {"name": "large_blocks", "vars":["LZMAUseSeparateProcess=yes", "LZMABlockSize=262144"]},
+    {"name": "large_blocks_two_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=2"]},
+    {"name": "large_blocks_four_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=4"]},
+    {"name": "large_blocks_eight_threads", "vars":["LZMAUseSeparateProcess=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=8"]},
+    {"name": "dict_small", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=131070"]},
+    {"name": "dict_medium", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=262140"]},
+    {"name": "dict_large", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=524280"]},
+    {"name": "dict_xlarge", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=1048576"]},
+  ]
+}
