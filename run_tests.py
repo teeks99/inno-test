@@ -12,13 +12,13 @@ inno_cmd = r"InnoSetup5\Compil32.exe"
 
 def save_results(resultsfile, data):
     with open(resultsfile, "w") as r:
-        json.dump(data, r)
+        json.dump(data, r, indent=4, sort_keys=True)
 
 def run_tests(test_set, template, results_file):
     with open(test_set, "r") as f:
         tests = json.load(f)
 
-    results = {"run": str(datetime.datetime.now), "payloads": []}
+    results = {"run": str(datetime.datetime.now()), "payloads": []}
 
     for payload in tests["payloads"]:
         data = {"name": payload["name"], "dir": payload["dir"], "tests": []}
