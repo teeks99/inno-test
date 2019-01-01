@@ -4,7 +4,11 @@ boost-bin-msvc14.1-all/
 boost-bin-msvc14.1-all.tar.xz
 boost_combined/
 
+test_1.0*.exe
+*_setup.iss
+
 Inno Setup 5/
+InnoSetup5/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
