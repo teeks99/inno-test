@@ -25,6 +25,6 @@
     {"name": "dict_small", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=131070"]},
     {"name": "dict_medium", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=262140"]},
     {"name": "dict_large", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=524280"]},
-    {"name": "dict_xlarge", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=1048576"]},
+    {"name": "dict_xlarge", "vars":["LZMAUseSeparateProcess=yes", "LZMADictionarySize=1048576"]}
   ]
 }
