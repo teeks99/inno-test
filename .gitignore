@@ -1,3 +1,9 @@
+boost_1_69_0/
+boost_1_69_0.tar.bz2
+boost-bin-msvc14.1-all/
+boost-bin-msvc14.1-all.tar.xz
+boost_combined/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
