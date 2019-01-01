@@ -23,8 +23,6 @@ def run_tests(test_set, template, results_file):
         data = {"name": payload["name"], "dir": payload["dir"], "tests": []}
         results["payloads"].append(data)
 
-        with open(results, "a") as r:
-            r.write()
         for test in tests["tests"]:
             name = test["name"]
             print("Running payload: {} test: {}".format(payload["name"], name))
