@@ -50,7 +50,7 @@ def run_tests(test_set, template, results_file):
             size = os.path.getsize(output_file)
 
             test_data = {"name": name, "elapsed": elapsed, "size": size}
-            data.append(test_data)
+            data[tests].append(test_data)
             save_results(results_file, results)
 
 if __name__=="__main__":
