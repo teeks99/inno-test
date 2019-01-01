@@ -6,14 +6,16 @@ except ImportError: # Python 2
     from urllib import urlretrieve
 
 src_url = "https://boost.teeks99.com/lib/1.69.0/boost_1_69_0.tar.bz2"
-srcfile, headers = urlretrieve(src_url)
-t = tarfile.open(srcfile)
+src_file = "boost_1_69_0.tar.bz2"
+urlretrieve(src_url, src_file)
+t = tarfile.open(src_file)
 t.extractall()
 t.close()
 
 bin_url = "https://boost.teeks99.com/misc/inno_test/boost-bin-msvc14.1-all.tar.xz"
-binfile, headers = urlretrieve(bin_url)
-t = tarfile.open(binfile)
+bin_file = "boost-bin-msvc14.1-all.tar.xz"
+urlretrieve(bin_url, bin_file)
+t = tarfile.open(bin_file)
 t.extractall()
 t.close()
 
