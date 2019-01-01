@@ -42,7 +42,9 @@ def run_tests(test_set, template, results_file):
                     setupf.write(stemplate.safe_substitute(replace))
 
             start = datetime.datetime.now()
-            subprocess.call('"' + inno_cmd + '" /cc ' + setup_file, shell=True)
+            cmd = '"' + inno_cmd + '" /cc ' + setup_file
+            print(cmd)
+            subprocess.call(cmd, shell=True)
             stop = datetime.datetime.now()
             elapsed = stop - start
 
