@@ -2,6 +2,7 @@ import json
 import datetime
 import subprocess
 import os
+import sys
 from string import Template
 
 template = "setup_template.iss"
@@ -54,4 +55,6 @@ def run_tests(test_set, template, results_file):
             save_results(results_file, results)
 
 if __name__=="__main__":
+    if len(sys.argv) > 1:
+        test_set = sys.argv[1]
     run_tests(test_set, template, results_file)
