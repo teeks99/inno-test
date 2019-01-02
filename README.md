@@ -147,7 +147,7 @@ Those lines don't look very exciting.
 Looking at the percetage change of each file compared to the control is a
 bit more interesting:
 
-![file size percentage](static/initial_sizes_percetage.png)
+![file size percentage](static/initial_sizes_percentage.png)
 
 The modified dictionary size tests have a, very small, change. If you feel
 like a tripling of the compile time for a 0.1% size improvement is worth it, 
