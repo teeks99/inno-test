@@ -172,5 +172,9 @@ improvement for something that was dealing with so many/large files. At this
 point, I think I have to ask if the NTFS/Kernel overhead is limiting file I/O, 
 but that is another investigation.
 
+## Next Steps
 
-
+After I kicked off this run, I came across a 
+[stack overflow post](https://stackoverflow.com/questions/40447498/best-compression-settings-in-inno-setup-compiler)
+that mentioned the `SolidCompression=yes` setting. I'm curious to see if that
+has an impact on more LZMANumBlockThreads. 
