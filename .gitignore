@@ -12,6 +12,10 @@ InnoSetup5.6.1_tk1.tar.xz
 Inno Setup 5/
 InnoSetup5/
 
+results/*.csv
+
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

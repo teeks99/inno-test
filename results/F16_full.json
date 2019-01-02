@@ -1,0 +1,409 @@
+{
+    "payloads": [
+        {
+            "dir": "boost_1_69_0",
+            "name": "boost_source",
+            "tests": [
+                {
+                    "elapsed": 1284.050024,
+                    "name": "control",
+                    "size": 143156555
+                },
+                {
+                    "elapsed": 1316.104625,
+                    "name": "separate_process",
+                    "size": 143156574
+                },
+                {
+                    "elapsed": 1285.721804,
+                    "name": "compression_threads_auto",
+                    "size": 143156579
+                },
+                {
+                    "elapsed": 1313.758412,
+                    "name": "compression_threads_1",
+                    "size": 143155648
+                },
+                {
+                    "elapsed": 1282.803612,
+                    "name": "compression_threads_2",
+                    "size": 143156565
+                },
+                {
+                    "elapsed": 857.520356,
+                    "name": "two_threads",
+                    "size": 143156556
+                },
+                {
+                    "elapsed": 860.983058,
+                    "name": "three_threads",
+                    "size": 143156565
+                },
+                {
+                    "elapsed": 864.550437,
+                    "name": "four_threads",
+                    "size": 143156535
+                },
+                {
+                    "elapsed": 855.755777,
+                    "name": "six_threads",
+                    "size": 143156567
+                },
+                {
+                    "elapsed": 864.555095,
+                    "name": "eight_threads",
+                    "size": 143156583
+                },
+                {
+                    "elapsed": 868.681452,
+                    "name": "twelve_threads",
+                    "size": 143156588
+                },
+                {
+                    "elapsed": 865.842651,
+                    "name": "sixteen_threads",
+                    "size": 143156562
+                },
+                {
+                    "elapsed": 1291.596815,
+                    "name": "large_blocks",
+                    "size": 143156539
+                },
+                {
+                    "elapsed": 851.453169,
+                    "name": "large_blocks_two_threads",
+                    "size": 143156522
+                },
+                {
+                    "elapsed": 861.698224,
+                    "name": "large_blocks_four_threads",
+                    "size": 143156574
+                },
+                {
+                    "elapsed": 866.104105,
+                    "name": "large_blocks_eight_threads",
+                    "size": 143156579
+                },
+                {
+                    "elapsed": 2420.866572,
+                    "name": "dict_small",
+                    "size": 143156544
+                },
+                {
+                    "elapsed": 4684.477023,
+                    "name": "dict_medium",
+                    "size": 143156554
+                },
+                {
+                    "elapsed": 9208.233575,
+                    "name": "dict_large",
+                    "size": 143155629
+                },
+                {
+                    "elapsed": 18253.759251,
+                    "name": "dict_xlarge",
+                    "size": 143155621
+                }
+            ]
+        },
+        {
+            "dir": "boost-bin-msvc14.1-all/lib64-msvc-14.1",
+            "name": "boost_binaries_64",
+            "tests": [
+                {
+                    "elapsed": 421.873677,
+                    "name": "control",
+                    "size": 117639476
+                },
+                {
+                    "elapsed": 407.141285,
+                    "name": "separate_process",
+                    "size": 117639484
+                },
+                {
+                    "elapsed": 416.6466,
+                    "name": "compression_threads_auto",
+                    "size": 117639487
+                },
+                {
+                    "elapsed": 650.067388,
+                    "name": "compression_threads_1",
+                    "size": 117631080
+                },
+                {
+                    "elapsed": 409.585615,
+                    "name": "compression_threads_2",
+                    "size": 117639494
+                },
+                {
+                    "elapsed": 397.41002,
+                    "name": "two_threads",
+                    "size": 117639482
+                },
+                {
+                    "elapsed": 405.701236,
+                    "name": "three_threads",
+                    "size": 117639478
+                },
+                {
+                    "elapsed": 404.389314,
+                    "name": "four_threads",
+                    "size": 117639483
+                },
+                {
+                    "elapsed": 402.01624,
+                    "name": "six_threads",
+                    "size": 117639475
+                },
+                {
+                    "elapsed": 400.76622,
+                    "name": "eight_threads",
+                    "size": 117639480
+                },
+                {
+                    "elapsed": 399.743882,
+                    "name": "twelve_threads",
+                    "size": 117639477
+                },
+                {
+                    "elapsed": 401.167737,
+                    "name": "sixteen_threads",
+                    "size": 117639482
+                },
+                {
+                    "elapsed": 399.251142,
+                    "name": "large_blocks",
+                    "size": 117639474
+                },
+                {
+                    "elapsed": 400.054525,
+                    "name": "large_blocks_two_threads",
+                    "size": 117639489
+                },
+                {
+                    "elapsed": 399.236824,
+                    "name": "large_blocks_four_threads",
+                    "size": 117639480
+                },
+                {
+                    "elapsed": 398.018114,
+                    "name": "large_blocks_eight_threads",
+                    "size": 117639483
+                },
+                {
+                    "elapsed": 407.752775,
+                    "name": "dict_small",
+                    "size": 117523453
+                },
+                {
+                    "elapsed": 416.673136,
+                    "name": "dict_medium",
+                    "size": 117536666
+                },
+                {
+                    "elapsed": 441.044378,
+                    "name": "dict_large",
+                    "size": 117529234
+                },
+                {
+                    "elapsed": 488.435493,
+                    "name": "dict_xlarge",
+                    "size": 117529240
+                }
+            ]
+        },
+        {
+            "dir": "boost-bin-msvc14.1-all",
+            "name": "boost_binaries_all",
+            "tests": [
+                {
+                    "elapsed": 763.186734,
+                    "name": "control",
+                    "size": 218881171
+                },
+                {
+                    "elapsed": 737.765805,
+                    "name": "separate_process",
+                    "size": 218881176
+                },
+                {
+                    "elapsed": 737.078064,
+                    "name": "compression_threads_auto",
+                    "size": 218881181
+                },
+                {
+                    "elapsed": 1160.749428,
+                    "name": "compression_threads_1",
+                    "size": 218888910
+                },
+                {
+                    "elapsed": 736.741448,
+                    "name": "compression_threads_2",
+                    "size": 218881195
+                },
+                {
+                    "elapsed": 717.400339,
+                    "name": "two_threads",
+                    "size": 218881164
+                },
+                {
+                    "elapsed": 737.744546,
+                    "name": "three_threads",
+                    "size": 218881175
+                },
+                {
+                    "elapsed": 739.063707,
+                    "name": "four_threads",
+                    "size": 218881163
+                },
+                {
+                    "elapsed": 735.637301,
+                    "name": "six_threads",
+                    "size": 218881173
+                },
+                {
+                    "elapsed": 734.715333,
+                    "name": "eight_threads",
+                    "size": 218881178
+                },
+                {
+                    "elapsed": 737.832863,
+                    "name": "twelve_threads",
+                    "size": 218881176
+                },
+                {
+                    "elapsed": 742.255609,
+                    "name": "sixteen_threads",
+                    "size": 218881173
+                },
+                {
+                    "elapsed": 746.226137,
+                    "name": "large_blocks",
+                    "size": 218881173
+                },
+                {
+                    "elapsed": 737.603583,
+                    "name": "large_blocks_two_threads",
+                    "size": 218881185
+                },
+                {
+                    "elapsed": 725.56633,
+                    "name": "large_blocks_four_threads",
+                    "size": 218881174
+                },
+                {
+                    "elapsed": 706.425915,
+                    "name": "large_blocks_eight_threads",
+                    "size": 218881187
+                },
+                {
+                    "elapsed": 724.648642,
+                    "name": "dict_small",
+                    "size": 218722376
+                },
+                {
+                    "elapsed": 756.400017,
+                    "name": "dict_medium",
+                    "size": 218735009
+                },
+                {
+                    "elapsed": 810.802761,
+                    "name": "dict_large",
+                    "size": 218726199
+                },
+                {
+                    "elapsed": 906.512504,
+                    "name": "dict_xlarge",
+                    "size": 218726197
+                }
+            ]
+        },
+        {
+            "dir": "boost_combined",
+            "name": "combined",
+            "tests": [
+                {
+                    "elapsed": 2062.884815,
+                    "name": "control",
+                    "size": 361730854
+                },
+                {
+                    "elapsed": 2024.640438,
+                    "name": "separate_process",
+                    "size": 361730874
+                },
+                {
+                    "elapsed": 2009.622549,
+                    "name": "compression_threads_auto",
+                    "size": 361730878
+                },
+                {
+                    "elapsed": 2450.864312,
+                    "name": "compression_threads_1",
+                    "size": 361739482
+                },
+                {
+                    "elapsed": 2002.015058,
+                    "name": "compression_threads_2",
+                    "size": 361730881
+                },
+                {
+                    "elapsed": 1560.219966,
+                    "name": "two_threads",
+                    "size": 361730898
+                },
+                {
+                    "elapsed": 1561.969946,
+                    "name": "three_threads",
+                    "size": 361730864
+                },
+                {
+                    "elapsed": 1558.06453,
+                    "name": "four_threads",
+                    "size": 361730895
+                },
+                {
+                    "elapsed": 1559.754427,
+                    "name": "six_threads",
+                    "size": 361730909
+                },
+                {
+                    "elapsed": 1562.202278,
+                    "name": "eight_threads",
+                    "size": 361730874
+                },
+                {
+                    "elapsed": 1560.003945,
+                    "name": "twelve_threads",
+                    "size": 361730891
+                },
+                {
+                    "elapsed": 1569.876615,
+                    "name": "sixteen_threads",
+                    "size": 361730855
+                },
+                {
+                    "elapsed": 1998.975624,
+                    "name": "large_blocks",
+                    "size": 361730907
+                },
+                {
+                    "elapsed": 1541.613148,
+                    "name": "large_blocks_two_threads",
+                    "size": 361730851
+                },
+                {
+                    "elapsed": 1544.500631,
+                    "name": "large_blocks_four_threads",
+                    "size": 361730908
+                },
+                {
+                    "elapsed": 1549.838109,
+                    "name": "large_blocks_eight_threads",
+                    "size": 361730927
+                }
+            ]
+        }
+    ],
+    "run": "2019-01-01 16:04:09.211523"
+}

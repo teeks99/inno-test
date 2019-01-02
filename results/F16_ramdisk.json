@@ -1,0 +1,269 @@
+{
+    "overview": "Run on an Azure F16 VM (16 cores, 32GB Ram), utilizing the ImDisk ramdisk utility to create a 10GB ramdisk as drive F: then running form there.  The ramdisk eventually filled up, so this did not complete, but enough was recorded that there was no need to keep going.",
+    "payloads": [
+        {
+            "dir": "boost_1_69_0",
+            "name": "boost_source",
+            "tests": [
+                {
+                    "elapsed": 1435.875011,
+                    "name": "control",
+                    "size": 143156555
+                },
+                {
+                    "elapsed": 1401.674104,
+                    "name": "separate_process",
+                    "size": 143156574
+                },
+                {
+                    "elapsed": 1312.578152,
+                    "name": "compression_threads_auto",
+                    "size": 143156579
+                },
+                {
+                    "elapsed": 1329.114483,
+                    "name": "compression_threads_1",
+                    "size": 143155648
+                },
+                {
+                    "elapsed": 1327.81839,
+                    "name": "compression_threads_2",
+                    "size": 143156565
+                },
+                {
+                    "elapsed": 911.926085,
+                    "name": "two_threads",
+                    "size": 143156556
+                },
+                {
+                    "elapsed": 908.410386,
+                    "name": "three_threads",
+                    "size": 143156565
+                },
+                {
+                    "elapsed": 906.973068,
+                    "name": "four_threads",
+                    "size": 143156535
+                },
+                {
+                    "elapsed": 923.72315,
+                    "name": "six_threads",
+                    "size": 143156567
+                },
+                {
+                    "elapsed": 940.047958,
+                    "name": "eight_threads",
+                    "size": 143156583
+                },
+                {
+                    "elapsed": 956.771749,
+                    "name": "twelve_threads",
+                    "size": 143156588
+                },
+                {
+                    "elapsed": 965.755749,
+                    "name": "sixteen_threads",
+                    "size": 143156562
+                },
+                {
+                    "elapsed": 1361.318405,
+                    "name": "large_blocks",
+                    "size": 143156539
+                },
+                {
+                    "elapsed": 910.707628,
+                    "name": "large_blocks_two_threads",
+                    "size": 143156522
+                },
+                {
+                    "elapsed": 920.410663,
+                    "name": "large_blocks_four_threads",
+                    "size": 143156574
+                },
+                {
+                    "elapsed": 937.551017,
+                    "name": "large_blocks_eight_threads",
+                    "size": 143156579
+                },
+                {
+                    "elapsed": 2500.698537,
+                    "name": "dict_small",
+                    "size": 143156544
+                },
+                {
+                    "elapsed": 4825.131886,
+                    "name": "dict_medium",
+                    "size": 143156554
+                },
+                {
+                    "elapsed": 9314.807702,
+                    "name": "dict_large",
+                    "size": 143155629
+                },
+                {
+                    "elapsed": 18422.447899,
+                    "name": "dict_xlarge",
+                    "size": 143155621
+                }
+            ]
+        },
+        {
+            "dir": "boost-bin-msvc14.1-all/lib64-msvc-14.1",
+            "name": "boost_binaries_64",
+            "tests": [
+                {
+                    "elapsed": 406.156309,
+                    "name": "control",
+                    "size": 117639476
+                },
+                {
+                    "elapsed": 390.156188,
+                    "name": "separate_process",
+                    "size": 117639484
+                },
+                {
+                    "elapsed": 404.782182,
+                    "name": "compression_threads_auto",
+                    "size": 117639487
+                },
+                {
+                    "elapsed": 614.643608,
+                    "name": "compression_threads_1",
+                    "size": 117631080
+                },
+                {
+                    "elapsed": 407.938983,
+                    "name": "compression_threads_2",
+                    "size": 117639494
+                },
+                {
+                    "elapsed": 391.095727,
+                    "name": "two_threads",
+                    "size": 117639482
+                },
+                {
+                    "elapsed": 388.705026,
+                    "name": "three_threads",
+                    "size": 117639478
+                },
+                {
+                    "elapsed": 389.938818,
+                    "name": "four_threads",
+                    "size": 117639483
+                },
+                {
+                    "elapsed": 388.908269,
+                    "name": "six_threads",
+                    "size": 117639475
+                },
+                {
+                    "elapsed": 389.376742,
+                    "name": "eight_threads",
+                    "size": 117639480
+                },
+                {
+                    "elapsed": 389.892341,
+                    "name": "twelve_threads",
+                    "size": 117639477
+                },
+                {
+                    "elapsed": 385.017548,
+                    "name": "sixteen_threads",
+                    "size": 117639482
+                },
+                {
+                    "elapsed": 389.407702,
+                    "name": "large_blocks",
+                    "size": 117639474
+                },
+                {
+                    "elapsed": 388.595681,
+                    "name": "large_blocks_two_threads",
+                    "size": 117639489
+                },
+                {
+                    "elapsed": 388.111105,
+                    "name": "large_blocks_four_threads",
+                    "size": 117639480
+                },
+                {
+                    "elapsed": 388.782878,
+                    "name": "large_blocks_eight_threads",
+                    "size": 117639483
+                },
+                {
+                    "elapsed": 394.845735,
+                    "name": "dict_small",
+                    "size": 117523453
+                },
+                {
+                    "elapsed": 408.954665,
+                    "name": "dict_medium",
+                    "size": 117536666
+                },
+                {
+                    "elapsed": 429.173994,
+                    "name": "dict_large",
+                    "size": 117529234
+                },
+                {
+                    "elapsed": 478.908206,
+                    "name": "dict_xlarge",
+                    "size": 117529240
+                }
+            ]
+        },
+        {
+            "dir": "boost-bin-msvc14.1-all",
+            "name": "boost_binaries_all",
+            "tests": [
+                {
+                    "elapsed": 740.8474,
+                    "name": "control",
+                    "size": 218881171
+                },
+                {
+                    "elapsed": 709.299996,
+                    "name": "separate_process",
+                    "size": 218881176
+                },
+                {
+                    "elapsed": 740.612654,
+                    "name": "compression_threads_auto",
+                    "size": 218881181
+                },
+                {
+                    "elapsed": 1132.604742,
+                    "name": "compression_threads_1",
+                    "size": 218888910
+                },
+                {
+                    "elapsed": 746.426688,
+                    "name": "compression_threads_2",
+                    "size": 218881195
+                },
+                {
+                    "elapsed": 713.145193,
+                    "name": "two_threads",
+                    "size": 218881164
+                },
+                {
+                    "elapsed": 714.629564,
+                    "name": "three_threads",
+                    "size": 218881175
+                },
+                {
+                    "elapsed": 712.692024,
+                    "name": "four_threads",
+                    "size": 218881163
+                },
+                {
+                    "elapsed": 714.582756,
+                    "name": "six_threads",
+                    "size": 218881173
+                }
+            ]
+        }
+    ],
+    "run": "2019-01-01 18:59:19.800863"
+}
