@@ -10,7 +10,7 @@ than actually building the libraries!) is packaging them up as inno setup
 installers. I've got a pretty good system now where I do a lot of the installer
 compiles in parallel, but it has always annoyed me that the inno setup
 compression seems to not be going very fast. I feel like file compression
-should be easily paralizable, but aparently it isn't.
+should be easily paralizable, but apparently it isn't.
 
 Anyway, I put together this repo to find some answers.
 
@@ -115,7 +115,7 @@ Looking at this, it seems that adding a second thread (in the `two_threads`
 test) drops the time significantly, but any more don't help. So it sounds
 like `LZMANumBlockThreads=2` will something I'll want to use. 
 
-I was very dissapointed that it doesn't seem like the LZMA compressor can 
+I was very disappointed that it doesn't seem like the LZMA compressor can 
 work with more than two block threads. According to the documentation, with
 the default LZMA `ultra64` compression, the `LZMADictionarySize` should be 
 65535. Then the block size should be four times that or 262,140. If that is
@@ -144,7 +144,7 @@ the difference in size between them:
 
 Those lines don't look very exciting.
 
-Looking at the percetage change of each file compared to the control is a
+Looking at the percentage change of each file compared to the control is a
 bit more interesting:
 
 ![file size percentage](static/initial_sizes_percentage.png)
