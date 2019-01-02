@@ -113,7 +113,7 @@ data:
 
 Looking at this, it seems that adding a second thread (in the `two_threads`
 test) drops the time significantly, but any more don't help. So it sounds
-like `LZMANumBlockThreads=2` will something I'll want to use. 
+like `LZMANumBlockThreads=2` will be something I'll want to use. 
 
 I was very disappointed that it doesn't seem like the LZMA compressor can 
 work with more than two block threads. According to the documentation, with
@@ -170,7 +170,9 @@ Here's a graph with the initial results and the ramdisk results as well:
 That did absolutely nothing. I was shocked, I would have expected some 
 improvement for something that was dealing with so many/large files. At this 
 point, I think I have to ask if the NTFS/Kernel overhead is limiting file I/O, 
-but that is another investigation.
+but that is another investigation. However, the more likely scenario is that
+this is limited by the couple of threads doing the compression being CPU/??? 
+limited.
 
 ## Next Steps
 
@@ -178,3 +180,13 @@ After I kicked off this run, I came across a
 [stack overflow post](https://stackoverflow.com/questions/40447498/best-compression-settings-in-inno-setup-compiler)
 that mentioned the `SolidCompression=yes` setting. I'm curious to see if that
 has an impact on more LZMANumBlockThreads. 
+
+## Conclusion
+
+It looks like the only thing that made any difference is adding
+`LZMANumBlockThreads=2`. For the case with lots of files, this seems to speed 
+things up by about 30%. 
+
+I feel like I'm left with more questions than answers. Why don't more threads 
+help? Why are the large files unaffected by threads? Is there no I/O limiting
+or does NTFS/Kernel become the long pole there?
