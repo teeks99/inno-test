@@ -83,7 +83,7 @@ To test these, I setup the following tests to fill the `${SetupVariables}` secti
 *   dict_small - "LZMAUseSeparateProcess=yes", "LZMADictionarySize=131070"
 *   dict_medium - "LZMAUseSeparateProcess=yes", "LZMADictionarySize=262140"
 *   dict_large - "LZMAUseSeparateProcess=yes", "LZMADictionarySize=524280"
-*   dict_xlarge - "LZMAUseSeparateProcess=yes", "LZMADictionarySize=1048576"]}
+*   dict_xlarge - "LZMAUseSeparateProcess=yes", "LZMADictionarySize=1048576"
 
 To test across various different types of files, I create four tests sets:
 
