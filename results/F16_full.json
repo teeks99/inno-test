@@ -401,6 +401,26 @@
                     "elapsed": 1549.838109,
                     "name": "large_blocks_eight_threads",
                     "size": 361730927
+                },
+                {
+                    "elapsed": 3151.100193,
+                    "name": "dict_small",
+                    "size": 361573365
+                },
+                {
+                    "elapsed": 5400.829963,
+                    "name": "dict_medium",
+                    "size": 361585119
+                },
+                {
+                    "elapsed": 9974.5671,
+                    "name": "dict_large",
+                    "size": 361577172
+                },
+                {
+                    "elapsed": 19256.073461,
+                    "name": "dict_xlarge",
+                    "size": 361577155
                 }
             ]
         }
