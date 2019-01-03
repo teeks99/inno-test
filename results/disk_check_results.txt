@@ -1,0 +1,34 @@
+REM F: is the Ramdisk, D: is the local disk (SSD?)
+F:\inno-test>python disk_check.py boost_1_69_0
+Checking: boost_1_69_0
+Elapsed: 0:00:06.875140
+
+F:\inno-test>python disk_check.py boost_combined
+Checking: boost_combined
+Elapsed: 0:00:19.062858
+
+F:\inno-test>python disk_check.py boost-bin-msvc14.1-all
+Checking: boost-bin-msvc14.1-all
+Elapsed: 0:00:16.703441
+
+F:\inno-test>python disk_check.py boost-bin-msvc14.1-all\lib64-msvc-14.1
+Checking: boost-bin-msvc14.1-all\lib64-msvc-14.1
+Elapsed: 0:00:07.015755
+
+F:\inno-test>d:
+
+D:\inno-test>python disk_check.py boost_1_69_0
+Checking: boost_1_69_0
+Elapsed: 0:04:22.768663
+
+D:\inno-test>python disk_check.py boost_combined
+Checking: boost_combined
+Elapsed: 0:04:32.586937
+
+D:\inno-test>python disk_check.py boost-bin-msvc14.1-all
+Checking: boost-bin-msvc14.1-all
+Elapsed: 0:00:22.411265
+
+D:\inno-test>python disk_check.py boost-bin-msvc14.1-all\lib64-msvc-14.1
+Checking: boost-bin-msvc14.1-all\lib64-msvc-14.1
+Elapsed: 0:00:07.000131

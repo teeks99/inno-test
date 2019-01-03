@@ -8,7 +8,7 @@ distribution ([1](https://boost.teeks99.com),
 [2](https://dl.bintray.com/boostorg/release/),
 [3](https://sourceforge.net/projects/boost/files/boost-binaries/)) for many
 years now. As long as I can remember, the longest part of the process (longer
-than actually building the libraries!) is packaging them up as inno setup
+than actually building the libraries!) is packaging them up as [Inno Setup](http://www.jrsoftware.org/isinfo.php)
 installers. I've got a pretty good system now where I do a lot of the installer
 compiles in parallel, but it has always annoyed me that the inno setup
 compression seems to not be going very fast. I feel like file compression
@@ -176,6 +176,26 @@ but that is another investigation. However, the more likely scenario is that
 this is limited by the couple of threads doing the compression being CPU/??? 
 limited.
 
+### Edit - Ramdisk check
+
+I added a new python script, `disk_check.py` which simply loops through all 
+the files in a given drive, does a CRC32 on them (the lightest-weight thing I 
+could think of that uses all the bytes of a file) and returns the time it
+took.
+
+```
+F:\inno-test>python disk_check.py boost_combined
+Checking: boost_combined
+Elapsed: 0:00:19.062858
+
+D:\inno-test>python disk_check.py boost_combined
+Checking: boost_combined
+Elapsed: 0:04:32.586937
+```
+
+It doesn't seem like either the filesystem or kernel is the bottleneck. 
+That means it **is** the compressor that is limiting things.
+
 ## Next Steps
 
 After I kicked off this run, I came across a 
@@ -190,5 +210,4 @@ It looks like the only thing that made any difference is adding
 things up by about 30%. 
 
 I feel like I'm left with more questions than answers. Why don't more threads 
-help? Why are the large files unaffected by threads? Is there no I/O limiting
-or does NTFS/Kernel become the long pole there?
+help? Why are the large files unaffected by threads? 
