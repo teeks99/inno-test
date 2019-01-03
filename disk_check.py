@@ -8,7 +8,7 @@ def check_dir(target):
         for file in files:
             filename = os.path.join(root, file)
             with open(filename, 'rb') as f:
-                crc = binascii.crc32(f)
+                crc = binascii.crc32(f.read())
 
 def time_check(target):
     start = datetime.datetime.now()
