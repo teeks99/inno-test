@@ -1,5 +1,7 @@
 # Test of Inno Setup Settings
 
+Initially written 2019-01-01.
+
 I have been packaging boost
 [windows binaries](https://github.com/teeks99/boost-release-windows/) for
 distribution ([1](https://boost.teeks99.com),

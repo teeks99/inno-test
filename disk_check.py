@@ -6,7 +6,9 @@ import datetime
 def check_dir(target):
     for root, dirs, files in os.walk(target):
         for file in files:
-            crc = binascii.crc32(os.path.join(root, file))
+            filename = os.path.join(root, file)
+            with open(filename, 'rb') as f:
+                crc = binascii.crc32(f)
 
 def time_check(target):
     start = datetime.datetime.now()
