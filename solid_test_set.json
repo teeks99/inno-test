@@ -8,14 +8,12 @@
     "tests": [
       {"name": "control", "vars":["LZMAUseSeparateProcess=yes"]},
       {"name": "solid", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes"]},
-      {"name": "two_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=2"]},
-      {"name": "three_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=3"]},
-      {"name": "four_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=4"]},
-      {"name": "six_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=6"]},
-      {"name": "eight_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=8"]},
-      {"name": "large_blocks_two_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=2"]},
-      {"name": "large_blocks_four_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=4"]},
-      {"name": "large_blocks_eight_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=8"]}
+      {"name": "solid_two_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=2"]},
+      {"name": "solid_four_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=4"]},
+      {"name": "solid_eight_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=8"]},
+      {"name": "solid_large_blocks_two_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=2"]},
+      {"name": "solid_large_blocks_four_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=4"]},
+      {"name": "solid_large_blocks_eight_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=8"]}
     ]
   }
   
