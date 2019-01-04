@@ -1,0 +1,189 @@
+{
+    "payloads": [
+        {
+            "dir": "boost_1_69_0",
+            "name": "boost_source",
+            "tests": [
+                {
+                    "elapsed": 1333.207311,
+                    "name": "control",
+                    "size": 143156555
+                },
+                {
+                    "elapsed": 207.854364,
+                    "name": "solid",
+                    "size": 83384348
+                },
+                {
+                    "elapsed": 139.812445,
+                    "name": "solid_two_threads",
+                    "size": 83613875
+                },
+                {
+                    "elapsed": 140.176069,
+                    "name": "solid_four_threads",
+                    "size": 83613874
+                },
+                {
+                    "elapsed": 138.53337,
+                    "name": "solid_eight_threads",
+                    "size": 83613887
+                },
+                {
+                    "elapsed": 140.001366,
+                    "name": "solid_large_blocks_two_threads",
+                    "size": 83613906
+                },
+                {
+                    "elapsed": 139.529013,
+                    "name": "solid_large_blocks_four_threads",
+                    "size": 83613845
+                },
+                {
+                    "elapsed": 139.55716,
+                    "name": "solid_large_blocks_eight_threads",
+                    "size": 83613866
+                }
+            ]
+        },
+        {
+            "dir": "boost-bin-msvc14.1-all/lib64-msvc-14.1",
+            "name": "boost_binaries_64",
+            "tests": [
+                {
+                    "elapsed": 376.773428,
+                    "name": "control",
+                    "size": 117639476
+                },
+                {
+                    "elapsed": 431.919216,
+                    "name": "solid",
+                    "size": 95440392
+                },
+                {
+                    "elapsed": 224.773293,
+                    "name": "solid_two_threads",
+                    "size": 98517267
+                },
+                {
+                    "elapsed": 134.295022,
+                    "name": "solid_four_threads",
+                    "size": 98517276
+                },
+                {
+                    "elapsed": 86.369252,
+                    "name": "solid_eight_threads",
+                    "size": 98517276
+                },
+                {
+                    "elapsed": 225.493412,
+                    "name": "solid_large_blocks_two_threads",
+                    "size": 98517285
+                },
+                {
+                    "elapsed": 134.925734,
+                    "name": "solid_large_blocks_four_threads",
+                    "size": 98517281
+                },
+                {
+                    "elapsed": 85.501552,
+                    "name": "solid_large_blocks_eight_threads",
+                    "size": 98517288
+                }
+            ]
+        },
+        {
+            "dir": "boost-bin-msvc14.1-all",
+            "name": "boost_binaries_all",
+            "tests": [
+                {
+                    "elapsed": 686.176584,
+                    "name": "control",
+                    "size": 218881171
+                },
+                {
+                    "elapsed": 808.697027,
+                    "name": "solid",
+                    "size": 174408776
+                },
+                {
+                    "elapsed": 429.914669,
+                    "name": "solid_two_threads",
+                    "size": 180191695
+                },
+                {
+                    "elapsed": 256.219483,
+                    "name": "solid_four_threads",
+                    "size": 180191691
+                },
+                {
+                    "elapsed": 158.699039,
+                    "name": "solid_eight_threads",
+                    "size": 180191681
+                },
+                {
+                    "elapsed": 434.575309,
+                    "name": "solid_large_blocks_two_threads",
+                    "size": 180191694
+                },
+                {
+                    "elapsed": 253.627383,
+                    "name": "solid_large_blocks_four_threads",
+                    "size": 180191691
+                },
+                {
+                    "elapsed": 156.780514,
+                    "name": "solid_large_blocks_eight_threads",
+                    "size": 180191704
+                }
+            ]
+        },
+        {
+            "dir": "boost_combined",
+            "name": "combined",
+            "tests": [
+                {
+                    "elapsed": 1981.451687,
+                    "name": "control",
+                    "size": 361730854
+                },
+                {
+                    "elapsed": 1011.979845,
+                    "name": "solid",
+                    "size": 257721685
+                },
+                {
+                    "elapsed": 542.719238,
+                    "name": "solid_two_threads",
+                    "size": 262480967
+                },
+                {
+                    "elapsed": 332.551718,
+                    "name": "solid_four_threads",
+                    "size": 262480929
+                },
+                {
+                    "elapsed": 234.066339,
+                    "name": "solid_eight_threads",
+                    "size": 262480947
+                },
+                {
+                    "elapsed": 537.455687,
+                    "name": "solid_large_blocks_two_threads",
+                    "size": 262480956
+                },
+                {
+                    "elapsed": 331.730413,
+                    "name": "solid_large_blocks_four_threads",
+                    "size": 262480949
+                },
+                {
+                    "elapsed": 230.629828,
+                    "name": "solid_large_blocks_eight_threads",
+                    "size": 262480987
+                }
+            ]
+        }
+    ],
+    "run": "2019-01-03 13:01:50.443319"
+}
