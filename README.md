@@ -12,7 +12,7 @@ than actually building the libraries!) is packaging them up as [Inno Setup](http
 installers. I've got a pretty good system now where I do a lot of the installer
 compiles in parallel, but it has always annoyed me that the inno setup
 compression seems to not be going very fast. I feel like file compression
-should be easily paralizable, but apparently it isn't.
+should be easily parallelizable, but apparently it isn't.
 
 Anyway, I put together this repo to find some answers.
 
@@ -87,7 +87,7 @@ To test these, I setup the following tests to fill the `${SetupVariables}` secti
 *   dict_large - "LZMAUseSeparateProcess=yes", "LZMADictionarySize=524280"
 *   dict_xlarge - "LZMAUseSeparateProcess=yes", "LZMADictionarySize=1048576"
 
-To test across various different types of files, I create four tests sets:
+To test across various different types of files, I created four tests sets:
 
 *   `boost_source` - the source files from the
     [boost 1.69.0 release](https://boost.teeks99.com/lib/1.69.0/boost_1_69_0.tar.bz2),
