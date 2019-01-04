@@ -210,7 +210,7 @@ It turns out it has a huge impact!
 ![solid times](static/solid_times.png)
 
 This is the kind of multi-threaded compression I was expecting to see! As I
-increase threads (for sufficiently large corpuses, with enough CPUs) the time 
+increase threads, for sufficiently large corpuses and with enough CPUs, the time 
 goes down. 
 
 As an added bonus, turning on the solid setting had a great impact on 
