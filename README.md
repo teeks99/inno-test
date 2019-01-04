@@ -196,18 +196,51 @@ Elapsed: 0:04:32.586937
 It doesn't seem like either the filesystem or kernel is the bottleneck. 
 That means it **is** the compressor that is limiting things.
 
-## Next Steps
+## Update - Testing with SolidCompression
 
-After I kicked off this run, I came across a 
+Update - 2019-01-03
+
+After I did the initial tests, I came across a 
 [stack overflow post](https://stackoverflow.com/questions/40447498/best-compression-settings-in-inno-setup-compiler)
-that mentioned the `SolidCompression=yes` setting. I'm curious to see if that
-has an impact on more LZMANumBlockThreads. 
+that mentioned the `SolidCompression=yes` [setting](http://www.jrsoftware.org/ishelp/index.php?topic=setup_solidcompression). 
+I'm curious to see if that has an impact on more LZMANumBlockThreads. 
+
+It turns out it has a huge impact!
+
+![solid times](static/solid_times.png)
+
+This is the kind of multi-threaded compression I was expecting to see! As I
+increase threads (for sufficiently large corpuses, with enough CPUs) the time 
+goes down. 
+
+As an added bonus, turning on the solid setting had a great impact on 
+compression:
+
+![solid sizes](static_solid_sizes.png)
+
+Why is this not the default???? It turns out there are some drawbacks, from 
+the documentation:
+
+>   The disadvantage to using solid compression is that because all files are 
+>   compressed into a single compressed stream, Setup can no longer randomly 
+>   access the files. This can decrease performance. If a certain file isn't 
+>   going to be extracted on the user's system, it has to decompress the data 
+>   for that file anyway (into memory) before it can decompress the next file. 
+>   And if, for example, there was an error while extracting a particular 
+>   file and the user clicks Retry, it can't just seek to the beginning of 
+>   that file's compressed data; since all files are stored in one stream, it 
+>   has seek to the very beginning. If disk spanning was enabled, the user 
+>   would have to re-insert disk 1.
+
+Actually, this doesn't bother me at all. 1) I don't have any dynamic-ness to
+my installation. The user installs all the files every time 2) I'll gladly 
+pay the penalty of the user having to re-start the decompression for a file
+that is 30-50% smaller and compressed much faster!
 
 ## Conclusion
 
-It looks like the only thing that made any difference is adding
-`LZMANumBlockThreads=2`. For the case with lots of files, this seems to speed 
-things up by about 30%. 
-
-I feel like I'm left with more questions than answers. Why don't more threads 
-help? Why are the large files unaffected by threads? 
+It looks like I'm going to be adding `SolidCompression=yes` to my builds, 
+along with an increase in the `LZMANumBlockThreads`. I'm thinking 6 or 8, for 
+my builds, I have a ton of cores (I've been playing with running on the
+Azure F72 instance, 72 Cores, 144GB RAM!), but I also have ten different
+installers that I kick off in parallel.

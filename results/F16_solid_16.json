@@ -1,0 +1,89 @@
+{
+    "payloads": [
+        {
+            "dir": "boost_1_69_0",
+            "name": "boost_source",
+            "tests": [
+                {
+                    "elapsed": 1313.534368,
+                    "name": "control",
+                    "size": 143156555
+                },
+                {
+                    "elapsed": 140.645081,
+                    "name": "solid_sixteen_threads",
+                    "size": 83613847
+                },
+                {
+                    "elapsed": 141.160965,
+                    "name": "solid_large_blocks_sixteen_threads",
+                    "size": 83613884
+                }
+            ]
+        },
+        {
+            "dir": "boost-bin-msvc14.1-all/lib64-msvc-14.1",
+            "name": "boost_binaries_64",
+            "tests": [
+                {
+                    "elapsed": 376.830369,
+                    "name": "control",
+                    "size": 117639476
+                },
+                {
+                    "elapsed": 86.828614,
+                    "name": "solid_sixteen_threads",
+                    "size": 98517274
+                },
+                {
+                    "elapsed": 85.769925,
+                    "name": "solid_large_blocks_sixteen_threads",
+                    "size": 98517280
+                }
+            ]
+        },
+        {
+            "dir": "boost-bin-msvc14.1-all",
+            "name": "boost_binaries_all",
+            "tests": [
+                {
+                    "elapsed": 692.929215,
+                    "name": "control",
+                    "size": 218881171
+                },
+                {
+                    "elapsed": 126.827088,
+                    "name": "solid_sixteen_threads",
+                    "size": 180191698
+                },
+                {
+                    "elapsed": 126.064734,
+                    "name": "solid_large_blocks_sixteen_threads",
+                    "size": 180191693
+                }
+            ]
+        },
+        {
+            "dir": "boost_combined",
+            "name": "combined",
+            "tests": [
+                {
+                    "elapsed": 1977.648362,
+                    "name": "control",
+                    "size": 361730854
+                },
+                {
+                    "elapsed": 197.956431,
+                    "name": "solid_sixteen_threads",
+                    "size": 262480961
+                },
+                {
+                    "elapsed": 197.41185,
+                    "name": "solid_large_blocks_sixteen_threads",
+                    "size": 262480922
+                }
+            ]
+        }
+    ],
+    "run": "2019-01-04 00:59:01.625357"
+}
