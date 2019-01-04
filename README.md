@@ -232,7 +232,7 @@ the documentation:
 >   has seek to the very beginning. If disk spanning was enabled, the user 
 >   would have to re-insert disk 1.
 
-Actually, this doesn't bother me at all. 1) I don't have any dynamic-ness to
+Actually, this doesn't bother me at all. 1) I don't have any dynamic nature to
 my installation. The user installs all the files every time 2) I'll gladly 
 pay the penalty of the user having to re-start the decompression for a file
 that is 30-50% smaller and compressed much faster!
