@@ -216,7 +216,7 @@ goes down.
 As an added bonus, turning on the solid setting had a great impact on 
 compression:
 
-![solid sizes](static_solid_sizes.png)
+![solid sizes](static/solid_sizes.png)
 
 Why is this not the default???? It turns out there are some drawbacks, from 
 the documentation:
