@@ -181,7 +181,7 @@ limited.
 I added a new python script, `disk_check.py` which simply loops through all 
 the files in a given drive, does a CRC32 on them (the lightest-weight thing I 
 could think of that uses all the bytes of a file) and returns the time it
-took.
+took. F: is the ramdisk, D: is the traditional drive.
 
 ```
 F:\inno-test>python disk_check.py boost_combined
