@@ -1,0 +1,14 @@
+{
+    "payloads": [
+      {"name": "boost_source", "dir": "boost_1_69_0"},
+      {"name": "boost_binaries_64", "dir": "boost-bin-msvc14.1-all/lib64-msvc-14.1"},
+      {"name": "boost_binaries_all", "dir": "boost-bin-msvc14.1-all"},
+      {"name": "combined", "dir": "boost_combined"}
+    ],
+    "tests": [
+      {"name": "control", "vars":["LZMAUseSeparateProcess=yes"]},
+      {"name": "solid_sixteen_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMANumBlockThreads=16"]},
+      {"name": "solid_large_blocks_sixteen_threads", "vars":["LZMAUseSeparateProcess=yes", "SolidCompression=yes", "LZMABlockSize=262144", "LZMANumBlockThreads=16"]}
+    ]
+  }
+  
